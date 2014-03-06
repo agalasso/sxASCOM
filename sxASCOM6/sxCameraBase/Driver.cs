@@ -724,7 +724,7 @@ namespace ASCOM.sxCameraBase
                         catch (System.Exception ex)
                         {
                             sxCamera = null;
-                            m_Connected = true;
+                            m_Connected = false;
                             String msg = SetError(String.Format("{0} caught and is rethrowing exception {1}", MethodBase.GetCurrentMethod().Name, ex));
                             Log.Write(msg);
                             throw ex;
